@@ -1,0 +1,264 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: '宋体';
+}
+
+.clearfix::before,
+.clearfix::after {
+    /* 在父级盒子前后都插入两个盒子 */
+    content: "";
+    display: block;
+    /* 默认为行内元素 */
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+.clearfix {
+    /* ie6、7专有 */
+    *zoom: 1;
+}
+
+body {
+    background-color: #fff;
+    height: 1800px;
+}
+
+li {
+    list-style: none;
+}
+
+.q {
+    width: 1100px;
+    height: 1360px;
+    margin: 100px auto;
+    background-color: #f3f5f7;
+    background-image: url(bg.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+/* 基本信息区域 */
+.box1 {
+    position: relative;
+    height: 400px;
+    margin: 30px auto;
+}
+
+.idp1,
+.idp2,
+.idp3 {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+.idp1 {
+    top: 25px;
+    left: 40px;
+}
+
+.idp2 {
+    top: 190px;
+    left: 70px;
+}
+
+.idp3 {
+    top: 100px;
+    left: 220px;
+}
+
+.idp1:hover,
+.idp2:hover,
+.idp3:hover {
+    box-shadow: 1px 3px 4px 4px rgba(0, 0, 0, .2);
+}
+
+.gk {
+    color: #fff;
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    width: 580px;
+    height: 340px;
+}
+
+.gk h1 {
+    height: 50px;
+    line-height: 50px;
+}
+
+.gk h1 audio {
+    height: 25px;
+    width: 300px;
+    margin-left: 65px;
+}
+
+.gk p {
+    font-weight: normal;
+    font-size: 16px;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+
+.gk ul {
+    margin-top: 70px;
+}
+
+.gk ul li {
+    height: 20px;
+    padding-bottom: 30px;
+}
+
+.gk ul li span {
+    /* color: black; */
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* 爱好栏部分 */
+.intohb {
+    width: 995px;
+    height: 40px;
+    background-color: #fff;
+    box-shadow: 0 2px 3px 3px rgba(0, 0, 0, .1);
+    margin-top: -10px;
+    margin-left: 40px;
+    padding-left: 20px;
+    line-height: 45px;
+}
+
+.intohb h3 {
+    float: left;
+    margin: 0 30px;
+    font-size: 16px;
+    color: #00a4ff;
+}
+
+.intohb ul {
+    float: left;
+    margin-left: 30px;
+}
+
+.intohb ul li {
+    float: left;
+}
+
+.intohb ul li a {
+    padding: 0 65px;
+    font-size: 16px;
+    color: #050505;
+    border-left: 1px solid #ccc;
+    text-decoration: none;
+}
+
+.intohb ul li a:hover {
+    color: #00a4ff;
+}
+
+/* 核心内容区域 */
+.hobbies {
+    width: 1080px;
+    margin: 30px auto;
+}
+
+.hb-hd {
+    height: 45px;
+}
+
+.hb-hd h3 {
+    float: left;
+    font-size: 20px;
+    color: #494949;
+    padding-left: 75px;
+}
+
+.hb-hd a {
+    float: right;
+    font-size: 12px;
+    color: #a5a5a5;
+    margin-top: 10px;
+    margin-right: 30px;
+}
+
+.hb-bd ul {
+    width: 1020px;
+    margin: 0 70px;
+
+}
+
+.hb-bd ul li {
+    float: left;
+    width: 228px;
+    height: 270px;
+    background-color: #fff;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+/* 🔺 */
+.hb-bd ul li:hover {
+    box-shadow: 0 2px 3px 3px rgba(0, 0, 0, .3);
+}
+
+.hb-bd ul li>img {
+    width: 100%;
+}
+
+.hb-bd ul li h4 {
+    margin: 20px 20px 20px 25px;
+    font-size: 14px;
+    color: #050505;
+    font-weight: normal;
+}
+
+.hb-bd .xx {
+    margin: 0 20px 0 25px;
+    font-size: 12px;
+    color: #999;
+}
+
+.hb-bd .xx span {
+    color: #ff7c2d;
+}
+/* 底部区域 */
+.footer {
+    width: 960px;
+    height: 200px;
+    margin: -15px auto;
+    background-color: #fff;
+    border-radius: 50px;
+}
+
+.footer h3 {
+    height: 50px;
+    line-height: 50px;
+    font-size: 45px;
+    font-weight: 700;
+    color: #050505;
+    padding-left: 25px;
+    text-shadow: 10px 6px 3px rgba(70, 69, 69, 0.3);
+}
+
+.footer p {
+    height: 60px;
+    line-height: 60px;
+    color: #000000;
+    font-size: 50px;
+    text-align: center;
+}
+
+.footer p:hover {
+    text-shadow: 10px 6px 3px rgba(100, 72, 72, 0.3);
+}
+
+.footer h4 {
+    text-align: right;
+    font-size: 20px;
+    font-weight: 400;
+}

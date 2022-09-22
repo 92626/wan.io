@@ -55,6 +55,7 @@ li {
     width: 200px;
     border-radius: 100px;
     overflow: hidden;
+    transition: all .5s;
 }
 
 .idp1 {
@@ -75,9 +76,24 @@ li {
 .idp1:hover,
 .idp2:hover,
 .idp3:hover {
+    height: 220px;
+    width: 220px;
+    /* transform: scale(1.5); */
+    border-radius: 110px;
+    overflow: hidden;
     box-shadow: 1px 3px 4px 4px rgba(0, 0, 0, .2);
 }
-
+.idp1 img,
+.idp2 img,
+.idp3 img {
+    width: 200px;
+    transition: all .5s;
+}
+.idp1 img:hover,
+.idp2 img:hover,
+.idp3 img:hover {
+    width: 220px;
+}
 .gk {
     color: #fff;
     position: absolute;
@@ -208,8 +224,13 @@ li {
 
 .hb-bd ul li>img {
     width: 100%;
+    transition: all .5s;
 }
-
+.hb-bd ul li:hover img {
+    /* width: 250px; */
+    transform: scale(1.5,1.5);
+    /* transform: translate(-10px,-10px); */
+}
 .hb-bd ul li h4 {
     margin: 20px 20px 20px 25px;
     font-size: 14px;
@@ -226,6 +247,7 @@ li {
 .hb-bd .xx span {
     color: #ff7c2d;
 }
+
 /* 底部区域 */
 .footer {
     width: 960px;

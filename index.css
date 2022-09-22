@@ -127,6 +127,7 @@ li {
     width: 220px;
 }
 .gk {
+    position: relative;
     color: #fff;
     position: absolute;
     top: 30px;
@@ -162,7 +163,11 @@ li {
     height: 20px;
     padding-bottom: 30px;
 }
-
+.gk>span {
+   position: absolute;
+   top: 350px;
+   right: 40px; 
+}
 .gk ul li span {
     /* color: black; */
     font-size: 16px;
